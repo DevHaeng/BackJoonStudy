@@ -23,12 +23,10 @@ public class Main {
             int a = Integer.parseInt(st.nextToken()) - 1;
             int b = Integer.parseInt(st.nextToken()) - 1;
 
-            while (true) {
-                int temp = basket.get(a);
-                basket.set(a, basket.get(b));
-                basket.set(b, temp);
-                break;
-            }
+            int temp = basket.get(a);
+            basket.set(a, basket.get(b));
+            basket.set(b, temp);
+
         }
 
         for (Integer i : basket) {
