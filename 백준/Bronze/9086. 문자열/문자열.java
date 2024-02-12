@@ -8,13 +8,16 @@ public class Main {
 
         int testCase = Integer.parseInt(br.readLine().trim());
 
+        StringBuilder result = new StringBuilder();
+
         for (int i = 0; i < testCase; i++) {
             String word = br.readLine().trim();
 
             char firstWord = word.charAt(0);
             char lastWord = word.charAt(word.length() - 1);
 
-            System.out.println(firstWord + "" + lastWord);
+            result.append(firstWord).append(lastWord).append("\n");
         }
+        System.out.println(result);
     }
 }
