@@ -8,11 +8,7 @@ public class Main {
 
         String code = br.readLine().trim();
 
-        for (int i = 0; i < code.length(); i++) {
-            char ascii = code.charAt(i);
-
-            System.out.println((int) ascii);
-        }
-
+        char ascii = code.charAt(0);
+        System.out.println((int)ascii);
     }
 }
