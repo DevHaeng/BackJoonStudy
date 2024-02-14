@@ -12,18 +12,18 @@ public class Main {
         for (int i = 0; i < testCase; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
 
-            int num = Integer.parseInt(st.nextToken());
-            String newString = st.nextToken();
+            int numR = Integer.parseInt(st.nextToken());
+            String stringS = st.nextToken();
 
-            StringBuilder result = new StringBuilder();
+            StringBuilder resultP = new StringBuilder();
 
-            for (int j = 0; j < newString.length(); j++) {
-                char word = newString.charAt(j);
-                for (int k = 0; k < num; k++) {
-                    result.append(word);
+            for (int j = 0; j < stringS.length(); j++) {
+                char word = stringS.charAt(j);
+                for (int k = 0; k < numR; k++) {
+                    resultP.append(word);
                 }
             }
-            System.out.println(result.toString());
+            System.out.println(resultP.toString());
         }
 
     }
