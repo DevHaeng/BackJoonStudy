@@ -24,8 +24,10 @@ public class Main {
            return Integer.compare(a[0],b[0]);
         });
 
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            System.out.println(points[i][0] + " " + points[i][1]);
+            sb.append(points[i][0]).append(" ").append(points[i][1]).append('\n');
         }
+        System.out.println(sb);
     }
 }
