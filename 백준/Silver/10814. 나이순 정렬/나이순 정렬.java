@@ -19,14 +19,11 @@ public class Main {
             list.add(member);
         }
 
-        list.sort(new Comparator<Member>() {
-            @Override
-            public int compare(Member m1, Member m2) {
-                if (m1.age != m2.age) {
-                    return Integer.compare(m1.age, m2.age);
-                }
-                return Integer.compare(m1.join, m2.join);
+        list.sort((m1, m2) -> {
+            if (m1.age != m2.age) {
+                return Integer.compare(m1.age, m2.age);
             }
+            return Integer.compare(m1.join, m2.join);
         });
 
         StringBuilder sb = new StringBuilder();
