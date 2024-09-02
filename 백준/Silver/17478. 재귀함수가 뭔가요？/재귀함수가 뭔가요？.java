@@ -11,7 +11,7 @@ public class Main {
         sb.append("어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다." + "\n");
         recursion(n, 0, sb);
 
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 
     private static void recursion(int n, int cnt, StringBuilder sb) {
